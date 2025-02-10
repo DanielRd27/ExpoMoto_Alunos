@@ -11,45 +11,114 @@
   <link rel="shortcut icon" href="img/motocicleta.png" type="image/x-icon">  
 </head>
 <body>
-  <!-- HEADER -->
-  <header id="event-subscription">
-    <div id="disclaimer">
-      <h2>ExpoMoto</h2>
-      <p class="about-event">Um evento para acelerar seu coração</p>
-      <p>Data do evento:</p>
-      <p class="event-date">Domingo, 25 de Maio, a partir das 10h</p>
-    </div>
-    <div id="subscription-form">
-      <p>Preencha o formulário para receber os detalhes do evento</p>
-      <form>
-        <div class="form-group">
-          <label for="name">Nome</label>
-          <input type="text" placeholder="Digite seu nome" />
-        </div>
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" placeholder="Digite seu melhor e-mail" />
-        </div>
-        <div class="form-group">
-          <label for="phone">Telefone</label>
-          <input type="text" placeholder="Número de Whatsapp" />
-        </div>
-        <div class="form-group">
-          <label for="interest">Principal interesse</label>
-          <select name="interest">
-            <option value="" disabled selected>Selecione</option>
-            <option value="apartment">Novos modelos</option>
-            <option value="house">Peças</option>
-            <option value="garden">Acessórios</option>
-            <option value="other">Outro</option>
-          </select>
-        </div>
-        <input type="submit" class="btn" value="Quero me inscrever" />
-      </form>
-    </div>
-  </header>
+  <!-- Parte princiapal -->
+  <main class="container-all">
+    <section class="main-section" id="main-section">
+      <div class="about-event">
+        <h1 class="tittle orange">ExpoMoto</h1>
+        <h2 class="subtittle uppercase white">Um evento para acelerar seu coração</h2>
+        <p class="white">Data do evento:</p>
+        <p class="orange">Domindo, 25 de Maio, a partir das 10h</p>
+      </div>
 
+      <div class="form-container">
+        <p>Preencha o formulário para receber os detalhes do evento</p>
 
+        <form action="">
+          <div class="form-group">
+            <label for="text">Nome:</label>
+            <input type="text" placeholder="Digite seu nome">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Digite seu melhor email">
+          </div>
+          <div class="form-group">
+            <label for="">Telefone:</label>
+            <input type="number" placeholder="Numero de Whatsapp">
+          </div>
+          <div class="form-group">
+            <label for="">Principal interesse</label>
+            <select name="" id="">
+              <option value="selecione" disabled selected>Selecione</option>
+              <option value="novos-modelos">Novos modelos</option>
+              <option value="pecas">Peças</option>
+              <option value="acessorios">Acessórios</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <input type="button" class="button uppercase white" value="Quero me Inscrever">
+        </form>
+      </div>
+    </section>
+
+    <section class="second-section">
+      <h1>Explore a linha de motocicletas</h1>
+
+      <div class="motorcycles-container">
+        <div class="group-moto">
+          <img src="img/hd1.jpg" alt="motorcycles 1">
+          <p>Criada para aventureiros</p>
+        </div>
+        <div class="group-moto">
+          <img src="img/hd2.jpg" alt="motorcycles 2">
+          <p>Nossos destinos. Nossas regras.</p>
+        </div>
+        <div class="group-moto">
+          <img src="img/hd3.jpg" alt="motorcycles 3">
+          <p>Desejada por todos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="local-section">
+      <div class="local white">
+        <img src="https://s201.q4cdn.com/697889289/files/design/Harley-Davidson-logo-white.png" alt="">
+        <p>Rua do evento, 1333</p>
+        <p>Bairro Principal</p>
+        <p>São Paulo-SP</p>
+        <p>Abertura 14h00</p>
+      </div>
+
+      <h1 class="subtittle orange">Local de Destaque</h1>
+      <p class="white localp">O evento será realizado em um local amplo onde você poderá realizar um test drive!</p>
+    </section>
+
+    <section class="moto-description">
+      <div class="moto-container">
+        <img src="img/moto1.jpg" alt="">
+        <p>Mais do que contruir máquinas. Liberdade para a alma</p>
+      </div>
+
+      <div class="moto-container">
+        <div class="model-list">
+          <h1 class="tittle">Modelos 2025</h1>
+          <ul>
+            <li>Grande american Touring</li>
+            <li>Cruiser</li>
+            <li>Adventure touring</li>
+            <li>Sport</li>
+            <li>E muito mais...</li>
+          </ul>
+        </div>
+        <img src="img/moto4.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="final-section">
+      <h1 class="white">Gostou? Então se inscreva:</h1>
+      
+      <input type="button" class="button uppercase white" value="Quero me Inscrever">
+    
+    </section>
+  </main>
+
+  <footer>
+    <h1>ExpoMoto</h1>
+    <p>Exposição de motocicletas - Edição Harley Davidson</p>
+    <p><b>Entre em contato:</b> Contact@expomoto.com.br</p>
+    <p><b>Ou pelo telefone:</b> (19)99990-9999</p>
+  </footer>
 
   <!-- 1ª Digitação (Aqui) -->
  

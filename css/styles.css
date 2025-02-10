@@ -15,116 +15,291 @@
   box-sizing: border-box;
 }
 
-/* ***Event form*** */
-#event-subscription {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/moto5.jpg");
-  background-position: center;
-  background-size: cover;
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--text-color);
-  text-align: center;
-}
-
-#disclaimer h2,
-#disclaimer .event-date {
+.orange {
   color: var(--primary);
 }
 
-#disclaimer h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+.white {
+  color: var(--text-color);
 }
 
-#disclaimer .about-event {
-  font-size: 1.5em;
+.uppercase {
   text-transform: uppercase;
-  margin-bottom: 1em;
 }
 
-#disclaimer p {
-  font-size: 1.2em;
-  margin-bottom: 0.3em;
+/* ***Event form*** */
+.main-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/moto5.jpg");
+  background-position: center;
+  background-size: cover;
+  
+  display: flex;
+  justify-content: space-between;
+
+  padding: 30px;
 }
 
-#disclaimer .event-date {
-  font-weight: bold;
-}
-
-#subscription-form {
+.form-container {
   background-color: var(--secondary);
-  padding: 2em;
-  width: 100%;
-  max-width: 400px;
-  margin-top: 2em;
-}
+  width: 30%;
 
-#subscription-form p {
-  font-size: 1.2em;
-  color: var(--text-secondary);
-  margin-bottom: 1em;
-}
-
-.form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
+  gap: 0.5rem;
+  justify-content: space-around;
+  padding: 2rem 1.5rem;
+  margin-top: 3rem;
 }
 
-.form-group label {
+.form-container p {
+  max-width: 90%;
+}
+
+.form-group{
+  padding: 5px 0;
+}
+
+label {
   color: var(--text-tertiary);
-  margin-bottom: 0.3em;
-  font-weight: bold;
+  font-weight: 600;
+
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
-.form-group input,
-.form-group select {
-  padding: 10px;
+input, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
   border-radius: 5px;
   border: none;
-  outline: none;
 }
 
-.btn {
-  background-color: var(--primary);
-  color: var(--text-color);
-  text-transform: uppercase;
-  width: 100%;
-  padding: 12px;
+.button {
+  background-color: #fa6600;
+  font-weight: 300;
+
   border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  font-size: 1em;
+  margin-top: 0.5rem;
+  border-radius: 0;
 }
 
-.btn:hover {
-  opacity: 1;
+.about-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-event .tittle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+  font-weight: 900;
+}
+
+.about-event .subtittle {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.about-event p {
+  margin-bottom: 0.2rem;
+}
+
+.about-event .orange {
+  font-weight: 600;
+}
+
+/* Second section */
+
+.second-section {
+  padding: 2rem 1.5rem;
+}
+
+.second-section h1 {
+  background-color: #95989a;
+  text-align: center;
+  padding: 1rem;
+
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.motorcycles-container {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.group-moto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.motorcycles-container img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Local section */
+
+.local-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hd1.jpg");
+  background-position: center;
+  background-size: cover;
+
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.local-section img {
+  width: 3rem;
+  height: 3.1rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.local {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.local p {
+  margin-bottom: 0.5rem;
+}
+
+.local-section h1 {
+  margin-bottom: 1.5rem;
+}
+
+.localp {
+  margin-bottom: 2rem;
+}
+
+/* moto descripition */
+
+.moto-description {
+  padding: 2rem 1.5rem;
+}
+
+.moto-description img {
+  height: 18rem;
+  width: auto;
+}
+
+.moto-container {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+  margin-right: 5rem;
+}
+
+.moto-container p {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  margin-right: 5rem;
+  width: 50%;
+}
+
+.moto-container ul {
+  margin-top: 2rem;
+
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.final-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/moto6.jpg");
+  background-position: center;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+}
+
+.final-section input {
+  margin-top: 1.5rem;
+  width: 25%;
+}
+
+/* Footer */
+
+footer {
+  background-color:#95989a;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+footer h1 {
+  font-size: 1.5rem;
+}
+
+footer p {
+  font-size: 14px;
 }
 
 
+@media screen and (max-width:900px) {
 
-/* 1ª Digitação (Aqui) */
+  .main-section {
+    display: flex;
+    flex-direction: column;
 
-
-
-
-/* Media Queries */
-@media (min-width: 768px) {
-  #event-subscription {
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: left;
+    align-items: center;
   }
 
-  #disclaimer h2 {
-    font-size: 3em;
+  .form-container {
+    width: 100%;
   }
 
-  #disclaimer .about-event {
-    font-size: 2em;
+  * {
+    font-size: 14px;
   }
 
-  
+  .group-moto img{
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .moto-container {
+    gap: 0.5rem;
+    margin-right: 0;
+  }
+
+  .moto-container img {
+    width: 23rem;
+    height: auto;
+  }
+
+  .moto-container p {
+    margin-right: 0;
+  }
+
+  .final-section input {
+    width: 50%;
+  }
 }
